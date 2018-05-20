@@ -8,7 +8,7 @@
     <title>Coxir.Struct.Webhook – coxir v0.1.0</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-68180f3d41.js"></script>
+    <script src="dist/sidebar_items-89d0ab201b.js"></script>
     
     
     
@@ -80,6 +80,13 @@
       </h1>
 
       
+        <section id="moduledoc">
+          <p>Defines methods used to interact with channel webhooks.</p>
+<p>Refer to <a href="https://discordapp.com/developers/docs/resources/webhook#webhook-object">this</a>
+for a list of fields and a broader documentation.</p>
+
+        </section>
+      
 
       
         <section id="summary" class="details-list">
@@ -102,11 +109,17 @@
     <a href="#delete/1">delete(webhook)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Deletes a given webhook</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#delete_with_token/2">delete_with_token(webhook, token)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Deletes a given webhook</p>
+</div>
   
 </div>
 <div class="summary-row">
@@ -114,11 +127,17 @@
     <a href="#edit/2">edit(webhook, params)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Modifies a given webhook</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#edit_with_token/3">edit_with_token(webhook, token, params)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Modifies a given webhook</p>
+</div>
   
 </div>
 <div class="summary-row">
@@ -126,11 +145,17 @@
     <a href="#execute/4">execute(webhook, token, params, wait \\ false)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Executes a given webhook</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#execute_github/4">execute_github(webhook, token, params, wait \\ false)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Executes a given <em>GitHub</em> webhook</p>
+</div>
   
 </div>
 <div class="summary-row">
@@ -138,11 +163,17 @@
     <a href="#execute_slack/4">execute_slack(webhook, token, params, wait \\ false)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Executes a given <em>Slack</em> webhook</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#get/1">get(id)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Fetches a webhook</p>
+</div>
   
 </div>
 <div class="summary-row">
@@ -150,11 +181,8 @@
     <a href="#get_with_token/2">get_with_token(webhook, token)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Fetches a webhook</p>
 </div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#select/1">select(pattern \\ %{})</a>
-  </div>
   
 </div>
 
@@ -187,16 +215,25 @@
     </a>
     <span class="signature">delete(webhook)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L24" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L82" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>delete(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Deletes a given webhook.</p>
+<p>Returns the atom <code class="inline">:ok</code> upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 <div class="detail" id="delete_with_token/2">
@@ -209,16 +246,25 @@
     </a>
     <span class="signature">delete_with_token(webhook, token)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L28" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L94" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>delete_with_token(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Deletes a given webhook.</p>
+<p>Refer to <a href="https://discordapp.com/developers/docs/resources/webhook#delete-webhook-with-token">this</a>
+for more information.</p>
+
   </section>
 </div>
 <div class="detail" id="edit/2">
@@ -231,16 +277,37 @@
     </a>
     <span class="signature">edit(webhook, params)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L14" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L56" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>edit(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/Enum.html#t:t/0">Enum.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Modifies a given webhook.</p>
+<p>Returns a webhook object upon success
+or a map containing error information.</p>
+<h4>Params</h4>
+<p>Must be an enumerable with the fields listed below.</p>
+<ul>
+<li><code class="inline">name</code> - the default name of the webhook
+</li>
+<li><code class="inline">avatar</code> - image for the default webhook avatar
+</li>
+<li><code class="inline">channel_id</code> - the new channel id to be moved to
+</li>
+</ul>
+<p>Refer to <a href="https://discordapp.com/developers/docs/resources/webhook#modify-webhook">this</a>
+for a broader explanation on the fields and their defaults.</p>
+
   </section>
 </div>
 <div class="detail" id="edit_with_token/3">
@@ -253,16 +320,25 @@
     </a>
     <span class="signature">edit_with_token(webhook, token, params)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L19" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L69" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>edit_with_token(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/Enum.html#t:t/0">Enum.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Modifies a given webhook.</p>
+<p>Refer to <a href="https://discordapp.com/developers/docs/resources/webhook#modify-webhook-with-token">this</a>
+for more information.</p>
+
   </section>
 </div>
 <div class="detail" id="execute/4">
@@ -277,16 +353,25 @@
     </a>
     <span class="signature">execute(webhook, token, params, wait \\ false)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L32" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L106" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>execute(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/Enum.html#t:t/0">Enum.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Executes a given webhook.</p>
+<p>Refer to <a href="https://discordapp.com/developers/docs/resources/webhook#execute-webhook">this</a>
+for more information.</p>
+
   </section>
 </div>
 <div class="detail" id="execute_github/4">
@@ -301,16 +386,25 @@
     </a>
     <span class="signature">execute_github(webhook, token, params, wait \\ false)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L40" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L130" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>execute_github(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/Enum.html#t:t/0">Enum.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Executes a given <em>GitHub</em> webhook.</p>
+<p>Refer to <a href="https://discordapp.com/developers/docs/resources/webhook#execute-githubcompatible-webhook">this</a>
+for more information.</p>
+
   </section>
 </div>
 <div class="detail" id="execute_slack/4">
@@ -325,16 +419,25 @@
     </a>
     <span class="signature">execute_slack(webhook, token, params, wait \\ false)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L36" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L118" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>execute_slack(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/Enum.html#t:t/0">Enum.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Executes a given <em>Slack</em> webhook.</p>
+<p>Refer to <a href="https://discordapp.com/developers/docs/resources/webhook#execute-slackcompatible-webhook">this</a>
+for more information.</p>
+
   </section>
 </div>
 <div class="detail" id="get/1">
@@ -347,16 +450,25 @@
     </a>
     <span class="signature">get(id)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L4" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L21" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>get(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>() | nil</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Fetches a webhook.</p>
+<p>Returns a webhook object upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 <div class="detail" id="get_with_token/2">
@@ -369,40 +481,25 @@
     </a>
     <span class="signature">get_with_token(webhook, token)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L9" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L34" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
-  </div>
-  <section class="docstring">
-    
-  </section>
-</div>
-<div class="detail" id="select/1">
-  
-  
-    <span id="select/0"></span>
-  
-  <div class="detail-header">
-    <a href="#select/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <span class="signature">select(pattern \\ %{})</span>
-    
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L2" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-    
-    
+      <div class="specs">
+        
+          <pre>get_with_token(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
     
   </div>
   <section class="docstring">
-    
+    <p>Fetches a webhook.</p>
+<p>Refer to <a href="https://discordapp.com/developers/docs/resources/webhook#get-webhook-with-token">this</a>
+for more information.</p>
+
   </section>
 </div>
 

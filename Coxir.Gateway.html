@@ -8,7 +8,7 @@
     <title>Coxir.Gateway – coxir v0.1.0</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-68180f3d41.js"></script>
+    <script src="dist/sidebar_items-89d0ab201b.js"></script>
     
     
     
@@ -108,11 +108,17 @@ provides methods to interact with them.</p>
     <a href="#set_status/2">set_status(status, game)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Changes the status on all shards</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#set_status/3">set_status(pid, status, game)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Changes the status on a given shard</p>
+</div>
   
 </div>
 
@@ -145,16 +151,24 @@ provides methods to interact with them.</p>
     </a>
     <span class="signature">set_status(status, game)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/gateway.ex#L53" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/gateway.ex#L71" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>set_status(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Changes the status on all shards.</p>
+<p>Refer to <a href="#set_status/3"><code class="inline">set_status/3</code></a> for more information.</p>
+
   </section>
 </div>
 <div class="detail" id="set_status/3">
@@ -167,16 +181,26 @@ provides methods to interact with them.</p>
     </a>
     <span class="signature">set_status(pid, status, game)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/gateway.ex#L39" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/gateway.ex#L49" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>set_status(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pid</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Changes the status on a given shard.</p>
+<p>Takes in a <code class="inline">PID</code> obtained from <a href="Coxir.Struct.Guild.html#shard/1"><code class="inline">Coxir.Struct.Guild.shard/1</code></a>.</p>
+<p>Refer to <a href="https://discordapp.com/developers/docs/topics/gateway#update-status">this</a>
+for more information.</p>
+
   </section>
 </div>
 

@@ -8,7 +8,7 @@
     <title>Coxir.Struct.Overwrite – coxir v0.1.0</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-68180f3d41.js"></script>
+    <script src="dist/sidebar_items-89d0ab201b.js"></script>
     
     
     
@@ -80,6 +80,13 @@
       </h1>
 
       
+        <section id="moduledoc">
+          <p>Defines methods used to interact with channel permission overwrites.</p>
+<p>Refer to <a href="https://discordapp.com/developers/docs/resources/channel#overwrite-object">this</a>
+for a list of fields and a broader documentation.</p>
+
+        </section>
+      
 
       
         <section id="summary" class="details-list">
@@ -91,6 +98,19 @@
             Summary
           </h1>
           
+  <div class="summary-types summary">
+    <h2>
+      <a href="#types">Types</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:overwrite/0">overwrite()</a>
+  </div>
+  
+</div>
+
+  </div>
+
 
           
   <div class="summary-functions summary">
@@ -102,11 +122,17 @@
     <a href="#delete/1">delete(map)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Deletes a given overwrite</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#delete/2">delete(overwrite, channel)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Deletes a given overwrite</p>
+</div>
   
 </div>
 <div class="summary-row">
@@ -114,23 +140,17 @@
     <a href="#edit/2">edit(map, params)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Modifies a given overwrite</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#edit/3">edit(overwrite, channel, params)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Modifies a given overwrite</p>
 </div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#get/1">get(id)</a>
-  </div>
-  
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#select/1">select(pattern \\ %{})</a>
-  </div>
   
 </div>
 
@@ -142,6 +162,47 @@
         </section>
       
 
+      
+        <section id="types" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#types">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Types
+          </h1>
+          <div class="types-list">
+            <div class="detail" id="t:overwrite/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:overwrite/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">overwrite()</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/overwrite.ex#L8" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>overwrite() :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+
+          </div>
+        </section>
       
 
       
@@ -163,16 +224,25 @@
     </a>
     <span class="signature">delete(map)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/overwrite.ex#L11" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/overwrite.ex#L58" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>delete(<a href="#t:overwrite/0">overwrite</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Deletes a given overwrite.</p>
+<p>Returns the atom <code class="inline">:ok</code> upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 <div class="detail" id="delete/2">
@@ -185,16 +255,24 @@
     </a>
     <span class="signature">delete(overwrite, channel)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/overwrite.ex#L14" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/overwrite.ex#L68" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>delete(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Deletes a given overwrite.</p>
+<p>Refer to <a href="#delete/1"><code class="inline">delete/1</code></a> for more information.</p>
+
   </section>
 </div>
 <div class="detail" id="edit/2">
@@ -207,16 +285,37 @@
     </a>
     <span class="signature">edit(map, params)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/overwrite.ex#L4" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/overwrite.ex#L36" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>edit(<a href="#t:overwrite/0">overwrite</a>(), <a href="https://hexdocs.pm/elixir/Enum.html#t:t/0">Enum.t</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Modifies a given overwrite.</p>
+<p>Returns the atom <code class="inline">:ok</code> upon success
+or a map containing error information.</p>
+<h4>Params</h4>
+<p>Must be an enumerable with the fields listed below.</p>
+<ul>
+<li><code class="inline">allow</code> - the bitwise value of all allowed permissions
+</li>
+<li><code class="inline">deny</code> - the bitwise value of all denied permissions
+</li>
+<li><code class="inline">type</code> - <code class="inline">member</code> for a member or <code class="inline">role</code> for a role
+</li>
+</ul>
+<p>Refer to <a href="https://discordapp.com/developers/docs/resources/channel#edit-channel-permissions">this</a>
+for a broader explanation on the fields and their defaults.</p>
+
   </section>
 </div>
 <div class="detail" id="edit/3">
@@ -229,62 +328,24 @@
     </a>
     <span class="signature">edit(overwrite, channel, params)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/overwrite.ex#L7" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/overwrite.ex#L46" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
-  </div>
-  <section class="docstring">
-    
-  </section>
-</div>
-<div class="detail" id="get/1">
-  
-  
-  <div class="detail-header">
-    <a href="#get/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <span class="signature">get(id)</span>
-    
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/overwrite.ex#L2" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-    
-    
+      <div class="specs">
+        
+          <pre>edit(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/Enum.html#t:t/0">Enum.t</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
     
   </div>
   <section class="docstring">
-    
-  </section>
-</div>
-<div class="detail" id="select/1">
-  
-  
-    <span id="select/0"></span>
-  
-  <div class="detail-header">
-    <a href="#select/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <span class="signature">select(pattern \\ %{})</span>
-    
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/overwrite.ex#L2" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-    
-    
-    
-  </div>
-  <section class="docstring">
-    
+    <p>Modifies a given overwrite.</p>
+<p>Refer to <a href="#edit/2"><code class="inline">edit/2</code></a> for more information.</p>
+
   </section>
 </div>
 

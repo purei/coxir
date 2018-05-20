@@ -8,7 +8,7 @@
     <title>Coxir.Struct.Message – coxir v0.1.0</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-68180f3d41.js"></script>
+    <script src="dist/sidebar_items-89d0ab201b.js"></script>
     
     
     
@@ -80,6 +80,20 @@
       </h1>
 
       
+        <section id="moduledoc">
+          <p>Defines methods used to interact with channel messages.</p>
+<p>Refer to <a href="https://discordapp.com/developers/docs/resources/channel#message-object">this</a>
+for a list of fields and a broader documentation.</p>
+<p>In addition, the following fields are also embedded.</p>
+<ul>
+<li><code class="inline">guild</code> - a guild object
+</li>
+<li><code class="inline">channel</code> - a channel object
+</li>
+</ul>
+
+        </section>
+      
 
       
         <section id="summary" class="details-list">
@@ -91,6 +105,19 @@
             Summary
           </h1>
           
+  <div class="summary-types summary">
+    <h2>
+      <a href="#types">Types</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:message/0">message()</a>
+  </div>
+  
+</div>
+
+  </div>
+
 
           
   <div class="summary-functions summary">
@@ -102,11 +129,17 @@
     <a href="#delete/1">delete(map)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Deletes a given message</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#delete_all_reactions/1">delete_all_reactions(map)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Deletes all reactions from a given message</p>
+</div>
   
 </div>
 <div class="summary-row">
@@ -114,11 +147,17 @@
     <a href="#delete_reaction/3">delete_reaction(map, emoji, user \\ &quot;@me&quot;)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Deletes a specific reaction from a given message</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#edit/2">edit(map, content)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Modifies a given message</p>
+</div>
   
 </div>
 <div class="summary-row">
@@ -126,11 +165,17 @@
     <a href="#get/1">get(id)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Fetches a cached message object</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#get_reactions/2">get_reactions(map, emoji)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Fetches a list of users specific to a reaction on a given message</p>
+</div>
   
 </div>
 <div class="summary-row">
@@ -138,11 +183,17 @@
     <a href="#pin/1">pin(map)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Pins a given message</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#react/2">react(map, emoji)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Reacts to a given message</p>
+</div>
   
 </div>
 <div class="summary-row">
@@ -150,17 +201,26 @@
     <a href="#reply/2">reply(map, content)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Replies to a given message</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#select/1">select(pattern \\ %{})</a>
   </div>
   
+    <div class="summary-synopsis"><p>Filters the cached message objects</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#unpin/1">unpin(map)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Unpins a given message</p>
+</div>
   
 </div>
 
@@ -172,6 +232,47 @@
         </section>
       
 
+      
+        <section id="types" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#types">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Types
+          </h1>
+          <div class="types-list">
+            <div class="detail" id="t:message/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:message/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">message()</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L12" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>message() :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+
+          </div>
+        </section>
       
 
       
@@ -193,16 +294,25 @@
     </a>
     <span class="signature">delete(map)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L27" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L69" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>delete(<a href="#t:message/0">message</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Deletes a given message.</p>
+<p>Returns the atom <code class="inline">:ok</code> upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 <div class="detail" id="delete_all_reactions/1">
@@ -215,16 +325,25 @@
     </a>
     <span class="signature">delete_all_reactions(map)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L51" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L141" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>delete_all_reactions(<a href="#t:message/0">message</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Deletes all reactions from a given message.</p>
+<p>Returns the atom <code class="inline">:ok</code> upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 <div class="detail" id="delete_reaction/3">
@@ -239,16 +358,25 @@
     </a>
     <span class="signature">delete_reaction(map, emoji, user \\ &quot;@me&quot;)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L47" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L129" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>delete_reaction(<a href="#t:message/0">message</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Deletes a specific reaction from a given message.</p>
+<p>Returns the atom <code class="inline">:ok</code> upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 <div class="detail" id="edit/2">
@@ -261,16 +389,35 @@
     </a>
     <span class="signature">edit(map, content)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L15" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L49" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>edit(<a href="#t:message/0">message</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/Enum.html#t:t/0">Enum.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Modifies a given message.</p>
+<p>Returns a message object upon success
+or a map containing error information.</p>
+<h4>Content</h4>
+<p>Either a string or an enumerable with
+the fields listed below.</p>
+<ul>
+<li><code class="inline">content</code> - the message contents (up to 2000 characters)
+</li>
+<li><code class="inline">embed</code> - embedded rich content, refer to
+  <a href="https://discordapp.com/developers/docs/resources/channel#embed-object">this</a>
+</li>
+</ul>
+
   </section>
 </div>
 <div class="detail" id="get/1">
@@ -283,16 +430,25 @@
     </a>
     <span class="signature">get(id)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L14" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>get(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>() | nil</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Fetches a cached message object.</p>
+<p>Returns an object if found
+and <code class="inline">nil</code> otherwise.</p>
+
   </section>
 </div>
 <div class="detail" id="get_reactions/2">
@@ -305,16 +461,25 @@
     </a>
     <span class="signature">get_reactions(map, emoji)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L43" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L117" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>get_reactions(<a href="#t:message/0">message</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">list</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Fetches a list of users specific to a reaction on a given message.</p>
+<p>Returns a list of user objects upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 <div class="detail" id="pin/1">
@@ -327,16 +492,25 @@
     </a>
     <span class="signature">pin(map)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L31" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L81" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>pin(<a href="#t:message/0">message</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Pins a given message.</p>
+<p>Returns the atom <code class="inline">:ok</code> upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 <div class="detail" id="react/2">
@@ -349,16 +523,25 @@
     </a>
     <span class="signature">react(map, emoji)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L39" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L105" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>react(<a href="#t:message/0">message</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Reacts to a given message.</p>
+<p>Returns the atom <code class="inline">:ok</code> upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 <div class="detail" id="reply/2">
@@ -371,16 +554,24 @@
     </a>
     <span class="signature">reply(map, content)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L12" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L31" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>reply(<a href="#t:message/0">message</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/Enum.html#t:t/0">Enum.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Replies to a given message.</p>
+<p>Refer to <a href="Coxir.Struct.Channel.html#send_message/2"><code class="inline">Coxir.Struct.Channel.send_message/2</code></a> for more information.</p>
+
   </section>
 </div>
 <div class="detail" id="select/1">
@@ -395,16 +586,24 @@
     </a>
     <span class="signature">select(pattern \\ %{})</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L14" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>select(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">list</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Filters the cached message objects.</p>
+<p>Returns a list of matched objects.</p>
+
   </section>
 </div>
 <div class="detail" id="unpin/1">
@@ -417,16 +616,25 @@
     </a>
     <span class="signature">unpin(map)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L35" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L93" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>unpin(<a href="#t:message/0">message</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Unpins a given message.</p>
+<p>Returns the atom <code class="inline">:ok</code> upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 

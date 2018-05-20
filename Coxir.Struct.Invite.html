@@ -8,7 +8,7 @@
     <title>Coxir.Struct.Invite – coxir v0.1.0</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-68180f3d41.js"></script>
+    <script src="dist/sidebar_items-89d0ab201b.js"></script>
     
     
     
@@ -80,6 +80,13 @@
       </h1>
 
       
+        <section id="moduledoc">
+          <p>Defines methods used to interact with guild invites.</p>
+<p>Refer to <a href="https://discordapp.com/developers/docs/resources/invite#invite-object">this</a>
+for a list of fields and a broader documentation.</p>
+
+        </section>
+      
 
       
         <section id="summary" class="details-list">
@@ -91,6 +98,19 @@
             Summary
           </h1>
           
+  <div class="summary-types summary">
+    <h2>
+      <a href="#types">Types</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:invite/0">invite()</a>
+  </div>
+  
+</div>
+
+  </div>
+
 
           
   <div class="summary-functions summary">
@@ -102,11 +122,17 @@
     <a href="#accept/1">accept(code)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Accepts a given invite</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#delete/1">delete(code)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Deletes a given invite</p>
+</div>
   
 </div>
 <div class="summary-row">
@@ -114,11 +140,8 @@
     <a href="#get/1">get(id)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Fetches an invite</p>
 </div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#select/1">select(pattern \\ %{})</a>
-  </div>
   
 </div>
 
@@ -130,6 +153,47 @@
         </section>
       
 
+      
+        <section id="types" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#types">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Types
+          </h1>
+          <div class="types-list">
+            <div class="detail" id="t:invite/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:invite/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">invite()</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/invite.ex#L8" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>invite() :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+
+          </div>
+        </section>
       
 
       
@@ -151,16 +215,25 @@
     </a>
     <span class="signature">accept(code)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/invite.ex#L11" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/invite.ex#L37" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>accept(<a href="#t:invite/0">invite</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Accepts a given invite.</p>
+<p>Returns an invite object upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 <div class="detail" id="delete/1">
@@ -173,16 +246,25 @@
     </a>
     <span class="signature">delete(code)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/invite.ex#L18" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/invite.ex#L52" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>delete(<a href="#t:invite/0">invite</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Deletes a given invite.</p>
+<p>Returns an invite object upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 <div class="detail" id="get/1">
@@ -195,40 +277,25 @@
     </a>
     <span class="signature">get(id)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/invite.ex#L4" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/invite.ex#L22" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
-  </div>
-  <section class="docstring">
-    
-  </section>
-</div>
-<div class="detail" id="select/1">
-  
-  
-    <span id="select/0"></span>
-  
-  <div class="detail-header">
-    <a href="#select/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <span class="signature">select(pattern \\ %{})</span>
-    
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/invite.ex#L2" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-    
-    
+      <div class="specs">
+        
+          <pre>get(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>() | nil</pre>
+        
+      </div>
     
   </div>
   <section class="docstring">
-    
+    <p>Fetches an invite.</p>
+<p>Returns an invite object upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 

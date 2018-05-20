@@ -8,7 +8,7 @@
     <title>Coxir.Struct.Member – coxir v0.1.0</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-68180f3d41.js"></script>
+    <script src="dist/sidebar_items-89d0ab201b.js"></script>
     
     
     
@@ -80,6 +80,22 @@
       </h1>
 
       
+        <section id="moduledoc">
+          <p>Defines methods used to interact with guild members.</p>
+<p>Refer to <a href="https://discordapp.com/developers/docs/resources/guild#guild-member-object">this</a>
+for a list of fields and a broader documentation.</p>
+<p>In addition, the following fields are also embedded.</p>
+<ul>
+<li><code class="inline">user</code> - a user object
+</li>
+<li><code class="inline">voice</code> - a voice channel object
+</li>
+<li><code class="inline">roles</code> - a list of role objects
+</li>
+</ul>
+
+        </section>
+      
 
       
         <section id="summary" class="details-list">
@@ -91,6 +107,31 @@
             Summary
           </h1>
           
+  <div class="summary-types summary">
+    <h2>
+      <a href="#types">Types</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:guild/0">guild()</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:member/0">member()</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:user/0">user()</a>
+  </div>
+  
+</div>
+
+  </div>
+
 
           
   <div class="summary-functions summary">
@@ -102,11 +143,17 @@
     <a href="#add_role/2">add_role(arg1, role)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Adds a role to a given member</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#ban/2">ban(arg1, query)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Bans a given member</p>
+</div>
   
 </div>
 <div class="summary-row">
@@ -114,11 +161,8 @@
     <a href="#edit/2">edit(arg1, params)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Modifies a given member</p>
 </div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#get/1">get(id)</a>
-  </div>
   
 </div>
 <div class="summary-row">
@@ -126,11 +170,17 @@
     <a href="#get/2">get(server, member)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Fetches a cached member object</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#kick/1">kick(arg1)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Kicks a given member</p>
+</div>
   
 </div>
 <div class="summary-row">
@@ -138,17 +188,26 @@
     <a href="#remove_role/2">remove_role(arg1, role)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Removes a role from a given member</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#select/1">select(pattern \\ %{})</a>
   </div>
   
+    <div class="summary-synopsis"><p>Filters the cached member objects</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#set_nick/2">set_nick(tuple, name)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Changes the nickname of a given member</p>
+</div>
   
 </div>
 
@@ -160,6 +219,103 @@
         </section>
       
 
+      
+        <section id="types" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#types">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Types
+          </h1>
+          <div class="types-list">
+            <div class="detail" id="t:guild/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:guild/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">guild()</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L14" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>guild() :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="t:member/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:member/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">member()</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L15" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>member() :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="t:user/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:user/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">user()</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L13" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>user() :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+
+          </div>
+        </section>
       
 
       
@@ -181,16 +337,25 @@
     </a>
     <span class="signature">add_role(arg1, role)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L58" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L140" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>add_role(<a href="#t:member/0">member</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Adds a role to a given member.</p>
+<p>Returns the atom <code class="inline">:ok</code> upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 <div class="detail" id="ban/2">
@@ -203,16 +368,33 @@
     </a>
     <span class="signature">ban(arg1, query)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L51" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L125" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>ban(<a href="#t:member/0">member</a>(), <a href="https://hexdocs.pm/elixir/Keyword.html#t:t/0">Keyword.t</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Bans a given member.</p>
+<p>Returns the atom <code class="inline">:ok</code> upon success
+or a map containing error information.</p>
+<h4>Query</h4>
+<p>Must be a keyword list with the fields listed below.</p>
+<ul>
+<li><code class="inline">delete-message-days</code> - number of days to delete the messages for (0-7)
+</li>
+<li><code class="inline">reason</code> - reason for the ban
+</li>
+</ul>
+
   </section>
 </div>
 <div class="detail" id="edit/2">
@@ -225,38 +407,41 @@
     </a>
     <span class="signature">edit(arg1, params)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L22" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L67" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
-  </div>
-  <section class="docstring">
-    
-  </section>
-</div>
-<div class="detail" id="get/1">
-  
-  
-  <div class="detail-header">
-    <a href="#get/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <span class="signature">get(id)</span>
-    
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L2" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-    
-    
+      <div class="specs">
+        
+          <pre>edit(<a href="#t:member/0">member</a>(), <a href="https://hexdocs.pm/elixir/Enum.html#t:t/0">Enum.t</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
     
   </div>
   <section class="docstring">
-    
+    <p>Modifies a given member.</p>
+<p>Returns the atom <code class="inline">:ok</code> upon success
+or a map containing error information.</p>
+<h4>Params</h4>
+<p>Must be an enumerable with the fields listed below.</p>
+<ul>
+<li><code class="inline">nick</code> - value to set the member’s nickname to
+</li>
+<li><code class="inline">roles</code> - list of role ids the member is assigned
+</li>
+<li><code class="inline">mute</code> - whether the member is muted
+</li>
+<li><code class="inline">deaf</code> - whether the member is deafened
+</li>
+<li><code class="inline">channel_id</code> - id of a voice channel to move the member to
+</li>
+</ul>
+<p>Refer to <a href="https://discordapp.com/developers/docs/resources/guild#modify-guild-member">this</a>
+for a broader explanation on the fields and their defaults.</p>
+
   </section>
 </div>
 <div class="detail" id="get/2">
@@ -269,16 +454,24 @@
     </a>
     <span class="signature">get(server, member)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L16" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L38" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>get(<a href="#t:guild/0">guild</a>(), <a href="#t:user/0">user</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>() | nil</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Fetches a cached member object.</p>
+<p>Returns an object if found and <code class="inline">nil</code> otherwise.</p>
+
   </section>
 </div>
 <div class="detail" id="kick/1">
@@ -291,16 +484,25 @@
     </a>
     <span class="signature">kick(arg1)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L44" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L105" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>kick(<a href="#t:member/0">member</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Kicks a given member.</p>
+<p>Returns the atom <code class="inline">:ok</code> upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 <div class="detail" id="remove_role/2">
@@ -313,16 +515,25 @@
     </a>
     <span class="signature">remove_role(arg1, role)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L65" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L155" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>remove_role(<a href="#t:member/0">member</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Removes a role from a given member.</p>
+<p>Returns the atom <code class="inline">:ok</code> upon success
+or a map containing error information.</p>
+
   </section>
 </div>
 <div class="detail" id="select/1">
@@ -337,16 +548,24 @@
     </a>
     <span class="signature">select(pattern \\ %{})</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L17" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>select(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">list</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Filters the cached member objects.</p>
+<p>Returns a list of matched objects.</p>
+
   </section>
 </div>
 <div class="detail" id="set_nick/2">
@@ -359,16 +578,25 @@
     </a>
     <span class="signature">set_nick(tuple, name)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L29" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L82" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>set_nick(<a href="#t:member/0">member</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Changes the nickname of a given member.</p>
+<p>Returns a map with a <code class="inline">nick</code> field
+or a map containing error information.</p>
+
   </section>
 </div>
 

@@ -8,7 +8,7 @@
     <title>Coxir.Voice – coxir v0.1.0</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-68180f3d41.js"></script>
+    <script src="dist/sidebar_items-89d0ab201b.js"></script>
     
     
     
@@ -97,6 +97,19 @@ logic behind voice channels.</p>
             Summary
           </h1>
           
+  <div class="summary-types summary">
+    <h2>
+      <a href="#types">Types</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:channel/0">channel()</a>
+  </div>
+  
+</div>
+
+  </div>
+
 
           
   <div class="summary-functions summary">
@@ -108,11 +121,8 @@ logic behind voice channels.</p>
     <a href="#join/1">join(map)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Joins a given voice channel</p>
 </div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#join/2">join(guild, channel)</a>
-  </div>
   
 </div>
 <div class="summary-row">
@@ -120,17 +130,26 @@ logic behind voice channels.</p>
     <a href="#leave/1">leave(guild)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Leaves from a given voice channel</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#play/2">play(server, term)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Plays a term on a given voice channel</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#stop_playing/1">stop_playing(server)</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Stops sending audio to a given voice channel</p>
+</div>
   
 </div>
 
@@ -142,6 +161,47 @@ logic behind voice channels.</p>
         </section>
       
 
+      
+        <section id="types" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#types">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Types
+          </h1>
+          <div class="types-list">
+            <div class="detail" id="t:channel/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:channel/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">channel()</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/voice.ex#L6" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>channel() :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+
+          </div>
+        </section>
       
 
       
@@ -163,38 +223,24 @@ logic behind voice channels.</p>
     </a>
     <span class="signature">join(map)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/voice.ex#L30" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/voice.ex#L38" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
-  </div>
-  <section class="docstring">
-    
-  </section>
-</div>
-<div class="detail" id="join/2">
-  
-  
-  <div class="detail-header">
-    <a href="#join/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <span class="signature">join(guild, channel)</span>
-    
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/voice.ex#L33" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-    
-    
+      <div class="specs">
+        
+          <pre>join(<a href="#t:channel/0">channel</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()</pre>
+        
+      </div>
     
   </div>
   <section class="docstring">
-    
+    <p>Joins a given voice channel.</p>
+<p>Always returns a truthy value.</p>
+
   </section>
 </div>
 <div class="detail" id="leave/1">
@@ -207,16 +253,24 @@ logic behind voice channels.</p>
     </a>
     <span class="signature">leave(guild)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/voice.ex#L61" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/voice.ex#L77" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>leave(<a href="#t:channel/0">channel</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Leaves from a given voice channel.</p>
+<p>Always returns a truthy value.</p>
+
   </section>
 </div>
 <div class="detail" id="play/2">
@@ -229,16 +283,25 @@ logic behind voice channels.</p>
     </a>
     <span class="signature">play(server, term)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/voice.ex#L70" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/voice.ex#L94" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>play(<a href="#t:channel/0">channel</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/Stream.html#t:t/0">Stream.t</a>()) :: :ok | :error</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Plays a term on a given voice channel.</p>
+<p>Returns the atom <code class="inline">:ok</code> upon success
+or the atom <code class="inline">:error</code> otherwise.</p>
+
   </section>
 </div>
 <div class="detail" id="stop_playing/1">
@@ -251,16 +314,24 @@ logic behind voice channels.</p>
     </a>
     <span class="signature">stop_playing(server)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/voice.ex#L85" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/voice.ex#L116" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
     
     
+      <div class="specs">
+        
+          <pre>stop_playing(<a href="#t:channel/0">channel</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()</pre>
+        
+      </div>
+    
   </div>
   <section class="docstring">
-    
+    <p>Stops sending audio to a given voice channel.</p>
+<p>Always returns a truthy value.</p>
+
   </section>
 </div>
 
