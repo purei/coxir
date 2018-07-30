@@ -8,7 +8,7 @@
     <title>Coxir.Struct.Webhook – coxir v0.1.0</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-de74031831.js"></script>
+    <script src="dist/sidebar_items-eca1851e23.js"></script>
     
     
     
@@ -185,6 +185,33 @@ for a list of fields and a broader documentation.</p>
 </div>
   
 </div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_avatar/2">set_avatar(webhook, avatar)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the avatar of a given webhook</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_channel/2">set_channel(webhook, channel)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the channel of a given webhook</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_name/2">set_name(webhook, name)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the name of a given webhook</p>
+</div>
+  
+</div>
 
   </div>
 
@@ -215,7 +242,7 @@ for a list of fields and a broader documentation.</p>
     </a>
     <span class="signature">delete(webhook)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L82" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L114" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -246,7 +273,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">delete_with_token(webhook, token)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L94" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L126" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -277,7 +304,7 @@ for more information.</p>
     </a>
     <span class="signature">edit(webhook, params)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L56" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L55" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -320,7 +347,7 @@ for a broader explanation on the fields and their defaults.</p>
     </a>
     <span class="signature">edit_with_token(webhook, token, params)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L69" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L68" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -353,7 +380,7 @@ for more information.</p>
     </a>
     <span class="signature">execute(webhook, token, params, wait \\ false)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L106" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L138" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -386,7 +413,7 @@ for more information.</p>
     </a>
     <span class="signature">execute_github(webhook, token, params, wait \\ false)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L130" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L162" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -419,7 +446,7 @@ for more information.</p>
     </a>
     <span class="signature">execute_slack(webhook, token, params, wait \\ false)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L118" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L150" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -450,7 +477,7 @@ for more information.</p>
     </a>
     <span class="signature">get(id)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L21" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L20" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -481,7 +508,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_with_token(webhook, token)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L34" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L33" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -499,6 +526,99 @@ or a map containing error information.</p>
     <p>Fetches a webhook.</p>
 <p>Refer to <a href="https://discordapp.com/developers/docs/resources/webhook#get-webhook-with-token">this</a>
 for more information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_avatar/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_avatar/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_avatar(webhook, avatar)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L92" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_avatar(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the avatar of a given webhook.</p>
+<p>Returns a webhook object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_channel/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_channel/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_channel(webhook, channel)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L103" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_channel(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the channel of a given webhook.</p>
+<p>Returns a webhook object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_name/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_name/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_name(webhook, name)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/webhook.ex#L81" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_name(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the name of a given webhook.</p>
+<p>Returns a webhook object upon success
+or a map containing error information.</p>
 
   </section>
 </div>

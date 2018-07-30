@@ -8,7 +8,7 @@
     <title>Coxir.Struct.Role – coxir v0.1.0</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-de74031831.js"></script>
+    <script src="dist/sidebar_items-eca1851e23.js"></script>
     
     
     
@@ -153,6 +153,96 @@ for a list of fields and a broader documentation.</p>
 </div>
   
 </div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_color/2">set_color(map, color)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the color of a given role</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_color/3">set_color(role, guild, color)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the color of a given role</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_hoist/2">set_hoist(map, bool)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the hoist flag of a given role</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_hoist/3">set_hoist(role, guild, bool)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the hoist flag of a given role</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_mentionable/2">set_mentionable(map, bool)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the mentionable flag of a given role</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_mentionable/3">set_mentionable(role, guild, bool)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the mentionable flag of a given role</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_name/2">set_name(map, name)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the name of a given role</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_name/3">set_name(role, guild, name)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the name of a given role</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_permissions/2">set_permissions(map, permissions)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the permissions of a given role</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_permissions/3">set_permissions(role, guild, permissions)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the permissions of a given role</p>
+</div>
+  
+</div>
 
   </div>
 
@@ -224,7 +314,7 @@ for a list of fields and a broader documentation.</p>
     </a>
     <span class="signature">delete(map)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/role.ex#L61" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/role.ex#L166" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -255,7 +345,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">delete(role, guild)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/role.ex#L71" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/role.ex#L176" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -349,6 +439,311 @@ for a broader explanation on the fields and their defaults.</p>
   <section class="docstring">
     <p>Modifies a given role.</p>
 <p>Refer to <a href="#edit/2"><code class="inline">edit/2</code></a> for more information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_color/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_color/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_color(map, color)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/role.ex#L82" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_color(<a href="#t:role/0">role</a>(), <a href="https://hexdocs.pm/elixir/Integer.html#t:t/0">Integer.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the color of a given role.</p>
+<p>Returns a role object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_color/3">
+  
+  
+  <div class="detail-header">
+    <a href="#set_color/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_color(role, guild, color)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/role.ex#L92" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_color(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/Integer.html#t:t/0">Integer.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the color of a given role.</p>
+<p>Refer to <a href="#set_color/2"><code class="inline">set_color/2</code></a> for more information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_hoist/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_hoist/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_hoist(map, bool)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/role.ex#L124" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_hoist(<a href="#t:role/0">role</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the hoist flag of a given role.</p>
+<p>Returns a role object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_hoist/3">
+  
+  
+  <div class="detail-header">
+    <a href="#set_hoist/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_hoist(role, guild, bool)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/role.ex#L134" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_hoist(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the hoist flag of a given role.</p>
+<p>Refer to <a href="#set_hoist/2"><code class="inline">set_hoist/2</code></a> for more information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_mentionable/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_mentionable/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_mentionable(map, bool)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/role.ex#L145" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_mentionable(<a href="#t:role/0">role</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the mentionable flag of a given role.</p>
+<p>Returns a role object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_mentionable/3">
+  
+  
+  <div class="detail-header">
+    <a href="#set_mentionable/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_mentionable(role, guild, bool)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/role.ex#L155" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_mentionable(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the mentionable flag of a given role.</p>
+<p>Refer to <a href="#set_mentionable/2"><code class="inline">set_mentionable/2</code></a> for more information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_name/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_name/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_name(map, name)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/role.ex#L61" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_name(<a href="#t:role/0">role</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the name of a given role.</p>
+<p>Returns a role object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_name/3">
+  
+  
+  <div class="detail-header">
+    <a href="#set_name/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_name(role, guild, name)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/role.ex#L71" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_name(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the name of a given role.</p>
+<p>Refer to <a href="#set_name/2"><code class="inline">set_name/2</code></a> for more information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_permissions/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_permissions/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_permissions(map, permissions)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/role.ex#L103" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_permissions(<a href="#t:role/0">role</a>(), <a href="https://hexdocs.pm/elixir/Integer.html#t:t/0">Integer.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the permissions of a given role.</p>
+<p>Returns a role object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_permissions/3">
+  
+  
+  <div class="detail-header">
+    <a href="#set_permissions/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_permissions(role, guild, permissions)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/role.ex#L113" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_permissions(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/Integer.html#t:t/0">Integer.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the permissions of a given role.</p>
+<p>Refer to <a href="#set_permissions/2"><code class="inline">set_permissions/2</code></a> for more information.</p>
 
   </section>
 </div>

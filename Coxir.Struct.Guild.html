@@ -8,7 +8,7 @@
     <title>Coxir.Struct.Guild – coxir v0.1.0</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-de74031831.js"></script>
+    <script src="dist/sidebar_items-eca1851e23.js"></script>
     
     
     
@@ -325,6 +325,69 @@ for a list of fields and a broader documentation.</p>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#set_afk_channel/2">set_afk_channel(guild, channel)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the voice AFK channel of a given guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_afk_timeout/2">set_afk_timeout(guild, timeout)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the voice AFK timeout of a given guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_icon/2">set_icon(guild, icon)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the icon of a given guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_name/2">set_name(guild, name)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the name of a given guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_region/2">set_region(guild, region)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the region of a given guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_splash/2">set_splash(guild, splash)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the splash of a given guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_system_channel/2">set_system_channel(guild, channel)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the channel to which system messages are sent on a given guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#shard/1">shard(guild)</a>
   </div>
   
@@ -412,7 +475,7 @@ for a list of fields and a broader documentation.</p>
     </a>
     <span class="signature">add_member(guild, user, params)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L251" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L328" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -459,7 +522,7 @@ for a broader explanation on the fields and their defaults.</p>
     </a>
     <span class="signature">create_channel(guild, params)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L225" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L302" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -510,7 +573,7 @@ for a broader explanation on the fields and their defaults.</p>
     </a>
     <span class="signature">create_integration(guild, params)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L410" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L487" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -551,7 +614,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">create_role(guild, params \\ %{})</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L142" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L219" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -598,7 +661,7 @@ for a broader explanation on the fields and their defaults.</p>
     </a>
     <span class="signature">delete(guild)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L100" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L177" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -629,7 +692,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">do_prune(guild, query)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L345" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L422" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -717,7 +780,7 @@ for a broader explanation on the fields and their defaults.</p>
     </a>
     <span class="signature">edit_role_positions(guild, params)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L164" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L241" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -787,7 +850,7 @@ and <code class="inline">nil</code> otherwise.</p>
     </a>
     <span class="signature">get_bans(guild)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L360" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L437" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -818,7 +881,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_integrations(guild)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L426" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L503" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -849,7 +912,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_invites(guild)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L390" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L467" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -880,7 +943,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_member(guild, user)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L267" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L344" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -911,7 +974,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_prune(guild, query)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L326" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L403" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -948,7 +1011,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_regions()</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L476" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L553" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -979,7 +1042,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_regions(guild)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L464" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L541" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1010,7 +1073,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_roles(guild)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L188" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L265" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1041,7 +1104,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_webhooks(guild)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L449" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L526" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1072,7 +1135,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">leave(guild)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L115" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L192" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1105,7 +1168,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">list_members(term, query \\ [])</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L298" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L375" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1168,6 +1231,223 @@ for a broader explanation on the fields and their defaults.</p>
 
   </section>
 </div>
+<div class="detail" id="set_afk_channel/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_afk_channel/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_afk_channel(guild, channel)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L152" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_afk_channel(<a href="#t:guild/0">guild</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the voice AFK channel of a given guild.</p>
+<p>Returns a guild object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_afk_timeout/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_afk_timeout/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_afk_timeout(guild, timeout)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L141" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_afk_timeout(<a href="#t:guild/0">guild</a>(), <a href="https://hexdocs.pm/elixir/Integer.html#t:t/0">Integer.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the voice AFK timeout of a given guild.</p>
+<p>Returns a guild object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_icon/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_icon/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_icon(guild, icon)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L108" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_icon(<a href="#t:guild/0">guild</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the icon of a given guild.</p>
+<p>Returns a guild object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_name/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_name/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_name(guild, name)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L97" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_name(<a href="#t:guild/0">guild</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the name of a given guild.</p>
+<p>Returns a guild object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_region/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_region/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_region(guild, region)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L119" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_region(<a href="#t:guild/0">guild</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the region of a given guild.</p>
+<p>Returns a guild object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_splash/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_splash/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_splash(guild, splash)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L130" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_splash(<a href="#t:guild/0">guild</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the splash of a given guild.</p>
+<p>Returns a guild object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_system_channel/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_system_channel/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_system_channel(guild, channel)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L163" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_system_channel(<a href="#t:guild/0">guild</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the channel to which system messages are sent on a given guild.</p>
+<p>Returns a guild object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
 <div class="detail" id="shard/1">
   
   
@@ -1208,7 +1488,7 @@ for a broader explanation on the fields and their defaults.</p>
     </a>
     <span class="signature">unban(guild, user)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L375" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L452" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>

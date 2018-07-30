@@ -8,7 +8,7 @@
     <title>Coxir.Struct.Channel – coxir v0.1.0</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-de74031831.js"></script>
+    <script src="dist/sidebar_items-eca1851e23.js"></script>
     
     
     
@@ -259,6 +259,69 @@ for a list of fields and a broader documentation.</p>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#set_bitrate/2">set_bitrate(channel, bitrate)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the bitrate of a given voice channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_name/2">set_name(channel, name)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the name of a given channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_nsfw/2">set_nsfw(channel, bool)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the NSFW flag of a given channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_parent/2">set_parent(channel, parent)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the parent category of a given channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_position/2">set_position(channel, position)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the position of a given channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_topic/2">set_topic(channel, topic)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the topic of a given channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_user_limit/2">set_user_limit(channel, limit)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the user limit of a given voice channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#typing/1">typing(channel)</a>
   </div>
   
@@ -370,7 +433,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">create_invite(term, params \\ %{})</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L258" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L335" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -415,7 +478,7 @@ for a broader explanation on the fields and their defaults.</p>
     </a>
     <span class="signature">create_permission(channel, overwrite, params)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L233" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L310" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -445,7 +508,7 @@ for a broader explanation on the fields and their defaults.</p>
     </a>
     <span class="signature">create_webhook(channel, params)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L293" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L370" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -484,7 +547,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">delete(channel)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L204" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L281" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -599,7 +662,7 @@ and <code class="inline">nil</code> otherwise.</p>
     </a>
     <span class="signature">get_invites(channel)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L273" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L350" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -692,7 +755,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_voice_members(channel)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L324" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L401" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -724,7 +787,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_webhooks(channel)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L308" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L385" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -873,6 +936,223 @@ for a broader explanation on the fields and their defaults.</p>
 
   </section>
 </div>
+<div class="detail" id="set_bitrate/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_bitrate/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_bitrate(channel, bitrate)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L256" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_bitrate(<a href="#t:channel/0">channel</a>(), <a href="https://hexdocs.pm/elixir/Integer.html#t:t/0">Integer.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the bitrate of a given voice channel.</p>
+<p>Returns a channel object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_name/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_name/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_name(channel, name)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L201" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_name(<a href="#t:channel/0">channel</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the name of a given channel.</p>
+<p>Returns a channel object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_nsfw/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_nsfw/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_nsfw(channel, bool)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L245" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_nsfw(<a href="#t:channel/0">channel</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the NSFW flag of a given channel.</p>
+<p>Returns a channel object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_parent/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_parent/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_parent(channel, parent)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L234" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_parent(<a href="#t:channel/0">channel</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the parent category of a given channel.</p>
+<p>Returns a channel object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_position/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_position/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_position(channel, position)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L223" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_position(<a href="#t:channel/0">channel</a>(), <a href="https://hexdocs.pm/elixir/Integer.html#t:t/0">Integer.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the position of a given channel.</p>
+<p>Returns a channel object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_topic/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_topic/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_topic(channel, topic)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L212" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_topic(<a href="#t:channel/0">channel</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the topic of a given channel.</p>
+<p>Returns a channel object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_user_limit/2">
+  
+  
+  <div class="detail-header">
+    <a href="#set_user_limit/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_user_limit(channel, limit)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L267" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_user_limit(<a href="#t:channel/0">channel</a>(), <a href="https://hexdocs.pm/elixir/Integer.html#t:t/0">Integer.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the user limit of a given voice channel.</p>
+<p>Returns a channel object upon success
+or a map containing error information.</p>
+
+  </section>
+</div>
 <div class="detail" id="typing/1">
   
   
@@ -883,7 +1163,7 @@ for a broader explanation on the fields and their defaults.</p>
     </a>
     <span class="signature">typing(channel)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L219" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/channel.ex#L296" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
