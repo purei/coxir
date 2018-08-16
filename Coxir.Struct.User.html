@@ -8,7 +8,7 @@
     <title>Coxir.Struct.User – coxir v0.8.0</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-4e352cec56.js"></script>
+    <script src="dist/sidebar_items-1bb20adc32.js"></script>
     
     
     
@@ -212,6 +212,24 @@ for a list of fields and a broader documentation.</p>
 </div>
   
 </div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_avatar/1">set_avatar(avatar)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the avatar of the local user</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_username/1">set_username(name)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Changes the username of the local user</p>
+</div>
+  
+</div>
 
   </div>
 
@@ -283,7 +301,7 @@ for a list of fields and a broader documentation.</p>
     </a>
     <span class="signature">create_dm(recipient)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/user.ex#L119" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/user.ex#L170" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -314,7 +332,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">create_group(params)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/user.ex#L140" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/user.ex#L191" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -427,7 +445,7 @@ and <code class="inline">nil</code> otherwise.</p>
     </a>
     <span class="signature">get_connections()</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/user.ex#L83" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/user.ex#L134" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -458,7 +476,7 @@ for more information.</p>
     </a>
     <span class="signature">get_dms()</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/user.ex#L153" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/user.ex#L204" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -491,7 +509,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_guilds(query \\ [])</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/user.ex#L104" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/user.ex#L155" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -596,7 +614,7 @@ for a broader explanation on the fields and their defaults.</p>
     </a>
     <span class="signature">send_message(user, content)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/user.ex#L174" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/user.ex#L225" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -613,6 +631,73 @@ for a broader explanation on the fields and their defaults.</p>
   <section class="docstring">
     <p>Sends a direct message to a given user.</p>
 <p>Refer to <a href="Coxir.Struct.Channel.html#send_message/2"><code class="inline">Coxir.Struct.Channel.send_message/2</code></a> for more information.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_avatar/1">
+  
+  
+  <div class="detail-header">
+    <a href="#set_avatar/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_avatar(avatar)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/user.ex#L101" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_avatar(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the avatar of the local user.</p>
+<p>Returns an user object upon success
+or a map containing error information.</p>
+<h4>Avatar</h4>
+<p>Either a proper data URI scheme
+or the path of an image’s file.</p>
+<p>Refer to <a href="https://discordapp.com/developers/docs/resources/user#avatar-data">this</a>
+for a broader explanation.</p>
+
+  </section>
+</div>
+<div class="detail" id="set_username/1">
+  
+  
+  <div class="detail-header">
+    <a href="#set_username/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">set_username(name)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/user.ex#L83" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>set_username(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Changes the username of the local user.</p>
+<p>Returns an user object upon success
+or a map containing error information.</p>
 
   </section>
 </div>
