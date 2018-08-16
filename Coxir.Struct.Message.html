@@ -8,7 +8,7 @@
     <title>Coxir.Struct.Message – coxir v0.8.0</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-3c23b56e07.js"></script>
+    <script src="dist/sidebar_items-44b418a4f0.js"></script>
     
     
     
@@ -180,6 +180,15 @@ for a list of fields and a broader documentation.</p>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#is_activity?/1">is_activity?(message)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Checks whether a given message is an activity</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#pin/1">pin(map)</a>
   </div>
   
@@ -261,7 +270,7 @@ for a list of fields and a broader documentation.</p>
     
       <div class="specs">
         
-          <pre>message() :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+          <pre>message() :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
         
       </div>
     
@@ -479,6 +488,36 @@ and <code class="inline">nil</code> otherwise.</p>
     <p>Fetches a list of users specific to a reaction on a given message.</p>
 <p>Returns a list of user objects upon success
 or a map containing error information.</p>
+
+  </section>
+</div>
+<div class="detail" id="is_activity?/1">
+  
+  
+  <div class="detail-header">
+    <a href="#is_activity?/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">is_activity?(message)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/message.ex#L152" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>is_activity?(<a href="#t:message/0">message</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Checks whether a given message is an activity.</p>
+<p>Returns a boolean.</p>
 
   </section>
 </div>
