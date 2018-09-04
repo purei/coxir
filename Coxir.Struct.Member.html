@@ -8,7 +8,7 @@
     <title>Coxir.Struct.Member – coxir v0.8.0</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-44b418a4f0.js"></script>
+    <script src="dist/sidebar_items-a664034051.js"></script>
     
     
     
@@ -185,7 +185,7 @@ for a list of fields and a broader documentation.</p>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#kick/1">kick(arg1)</a>
+    <a href="#kick/2">kick(term, reason \\ &quot;&quot;)</a>
   </div>
   
     <div class="summary-synopsis"><p>Kicks a given member</p>
@@ -355,7 +355,7 @@ for a list of fields and a broader documentation.</p>
     </a>
     <span class="signature">add_role(arg1, role)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L151" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L152" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -386,7 +386,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">ban(arg1, query)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L136" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L137" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -502,7 +502,7 @@ for a broader explanation on the fields and their defaults.</p>
     </a>
     <span class="signature">has_role?(map, role)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L177" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L178" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -522,17 +522,19 @@ for a broader explanation on the fields and their defaults.</p>
 
   </section>
 </div>
-<div class="detail" id="kick/1">
+<div class="detail" id="kick/2">
   
+  
+    <span id="kick/1"></span>
   
   <div class="detail-header">
-    <a href="#kick/1" class="detail-link" title="Link to this function">
+    <a href="#kick/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">kick(arg1)</span>
+    <span class="signature">kick(term, reason \\ &quot;&quot;)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L116" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L117" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -541,7 +543,7 @@ for a broader explanation on the fields and their defaults.</p>
     
       <div class="specs">
         
-          <pre>kick(<a href="#t:member/0">member</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+          <pre>kick(<a href="#t:member/0">member</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
         
       </div>
     
@@ -594,7 +596,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">remove_role(arg1, role)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L166" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/member.ex#L167" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
