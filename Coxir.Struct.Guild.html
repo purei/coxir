@@ -8,7 +8,7 @@
     <title>Coxir.Struct.Guild – coxir v0.8.0</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-a664034051.js"></script>
+    <script src="dist/sidebar_items-ce48c2f55e.js"></script>
     
     
     
@@ -86,7 +86,7 @@
 for a list of fields and a broader documentation.</p>
 <p>In addition, the following fields are also embedded.</p>
 <ul>
-<li><code class="inline">owner</code> - an user object
+<li><code class="inline">owner</code> - a user object
 </li>
 <li><code class="inline">afk_channel</code> - a channel object
 </li>
@@ -139,7 +139,7 @@ for a list of fields and a broader documentation.</p>
     <a href="#add_member/3">add_member(guild, user, params)</a>
   </div>
   
-    <div class="summary-synopsis"><p>Adds an user to a given guild</p>
+    <div class="summary-synopsis"><p>Adds a user to a given guild</p>
 </div>
   
 </div>
@@ -212,6 +212,15 @@ for a list of fields and a broader documentation.</p>
   </div>
   
     <div class="summary-synopsis"><p>Fetches a cached guild object</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_ban/2">get_ban(guild, user)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches the ban for a user on a given guild</p>
 </div>
   
 </div>
@@ -418,7 +427,7 @@ for a list of fields and a broader documentation.</p>
     <a href="#unban/2">unban(guild, user)</a>
   </div>
   
-    <div class="summary-synopsis"><p>Removes the ban for an user on a given guild</p>
+    <div class="summary-synopsis"><p>Removes the ban for a user on a given guild</p>
 </div>
   
 </div>
@@ -508,7 +517,7 @@ for a list of fields and a broader documentation.</p>
     
   </div>
   <section class="docstring">
-    <p>Adds an user to a given guild.</p>
+    <p>Adds a user to a given guild.</p>
 <p>Returns a member object upon success
 or a map containing error information.</p>
 <h4>Params</h4>
@@ -591,7 +600,7 @@ for a broader explanation on the fields and their defaults.</p>
     </a>
     <span class="signature">create_integration(guild, params)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L487" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L502" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -858,6 +867,37 @@ and <code class="inline">nil</code> otherwise.</p>
 
   </section>
 </div>
+<div class="detail" id="get_ban/2">
+  
+  
+  <div class="detail-header">
+    <a href="#get_ban/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_ban(guild, user)</span>
+    
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L452" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_ban(<a href="#t:guild/0">guild</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Fetches the ban for a user on a given guild.</p>
+<p>Returns a ban object
+or a map containing error information.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_bans/1">
   
   
@@ -899,7 +939,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_integrations(guild)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L503" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L518" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -930,7 +970,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_invites(guild)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L467" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L482" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1029,7 +1069,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_regions()</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L553" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L568" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1060,7 +1100,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_regions(guild)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L541" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L556" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1122,7 +1162,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_vanity_code(guild)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L568" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L583" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1153,7 +1193,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">get_webhooks(guild)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L526" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L541" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1184,7 +1224,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">is_lazy?(id)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L590" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L605" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1567,7 +1607,7 @@ or a map containing error information.</p>
     </a>
     <span class="signature">unban(guild, user)</span>
     
-      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L452" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/satom99/coxir/blob/master/lib/coxir/struct/guild.ex#L467" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1582,7 +1622,7 @@ or a map containing error information.</p>
     
   </div>
   <section class="docstring">
-    <p>Removes the ban for an user on a given guild.</p>
+    <p>Removes the ban for a user on a given guild.</p>
 <p>Returns the atom <code class="inline">:ok</code> upon success
 or a map containing error information.</p>
 
